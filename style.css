@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Menu{
+    display: none;
+}
+.Menu{
+    margin-top: 20px;
+}
+
+.Menu span a {
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.sidenav {
+    height: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    float: right;
+  }
+  
+  .sidenav a {
+    padding: 12px 12px 12px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+  }
+  .sidenav a h1{
+      font-size: 40px;
+      padding: 9px 0;
+   
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+#heading-slider{
+    font-size: 40px;
+    padding-right: 220px;
+    padding-left: 30px;
+}
+
+.slider-logo img{
+    position: absolute;
+    max-width: 100px;
+    bottom: 12px;
+    left: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+.header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+
+
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    height: 65px;
+    padding-top: 21px;
+    list-style: none;
+}
+
+
+.navbar ul li{
+    text-decoration: none;
+}
+
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0 15px;
+}
+
+.navbar ul li a:hover{
+    color: #1f7a24;
+}
+
+
+.main-content{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#2941ab ;
+    overflow:hidden;
+}
+.main-content .content-heading{
+    color: #95ff52;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-heading a{
+    text-decoration: none;
+    background-color: #95ff52;
+    display: inline-block;
+    height: 33px;
+    width: 151px;
+    border-radius: 16px;
+    align-items: center;
+    font: menu;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    color: rgb(41, 65, 171);
+    
+    margin-top: 27px;
+}
+
+.content-heading #heading-1{
+    
+    font-size: 150px;
+}
+
+.content-heading #heading-2{
+    padding-left: 2em;
+    font-size: 150px;
+}
+.content-heading #heading-2::after{
+    content: "Millions of songs and podcasts. No credit card needed.";
+    display: block;
+    font-size: 15px;
+    margin-top: 27px;
+    font-weight: lighter;
+}
+
+
+.circle-1{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #95ff52;
+    border-radius: 50%;
+    top: 400px;
+    left: -60px;
+}
+.circle-2{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    background-color: #95ff52;
+    border-radius: 50%;
+    top: 20px;
+    right: -20rem;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-contents{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo{
+    height: 50%;
+}
+
+.social-sites i{
+    width: 40px;
+}
+
+.mid-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.common-pad{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .Menu{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .header{
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+    }
+    .header .logo img{
+        padding-top: 10px;
+        max-width: 120px;
+    }
+
+    .content-heading #heading-1{
+        font-size: 100px;
+    }
+    .content-heading #heading-2{
+        padding: 0;
+        font-size: 100px;
+    }
+    .content-heading #heading-2::after{
+        content: "Millions of songs and podcasts. No credit card needed.";
+        min-width: 50px;
+        padding-left: 5rem;
+    }
+
+    /* footer section */
+    footer{
+        height: 60vh;
+    }
+    .footer-logo{
+        padding-top: 20px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    footer .about-contents{
+        flex-direction: column;
+        padding: 2px 2px;
+        align-items:flex-start;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .common-pad{
+        padding: 5px 5px;
+    }
+
+    .social-sites{
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 748px) {
+
+    .content-heading{
+        justify-content: center;
+        align-items: center;
+    }
+    .content-heading #heading-1{
+        padding: 0;
+        font-size: 70px;
+    }
+    .content-heading #heading-2{
+        /* padding-left:6rem; */
+        font-size: 70px;
+    }
+    .content-heading #heading-2::after{
+        content: "Millions of songs and podcasts. No credit card needed.";
+        min-width: 50px;
+        padding: 0;
+    }
+
+    .circle-1{
+        top: 43rem;
+        left:-8rem;
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle-2{
+        top: -15rem;
+        right: -10rem;
+    }
+
+
+}

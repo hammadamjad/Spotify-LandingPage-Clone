@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Listening is everything - Spotify</title>
+    <link rel="short icon" href="./img/spotify.png">
+</head>
+
+<body>
+
+    <!-- header starts here -->
+    <header class="header">
+        <div class="logo">
+            <img src="./img/Logo.png" alt="logo">
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Download</a></li>
+                <span>|</span>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+        <div class="Menu">
+            <span><a href="#" title="menu icons" onclick="openNav()">&#9776;</a></span>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" id="heading-slider">
+            <h1>Premium</h1>
+            <h1>Support</h1>
+            <h1>Download</h1>
+           
+        </a>
+        <span style="color: aliceblue; padding-left: 35px;font-size: 20px; 
+                        padding-top: 20px;">__</span>
+        <a href="#" style="padding-top: 20px;">Sign up</a>
+        <a href="#">Log in</a>
+        <div class="slider-logo">
+            <img src="./img/Logo.png" alt="logo">
+        </div>
+    </div>
+
+
+    <!-- body content starts here -->
+    <section class="main-content">
+        <div class="content-heading">
+            <h1 id="heading-1"> Listening is</h1>
+            <h1 id="heading-2">everything</h1>
+            <a href="#">GET SPOTIFY FREE</a>
+        </div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+    </section>
+    <!-- body content ends here -->
+
+
+    <!-- footer starts here -->
+    <footer>
+            <div class="about-contents">
+                <div class="footer-logo">
+                    <img src="./img/Logo.png" alt="logo">
+                </div>
+
+
+                <!-- <div class="mid-content"> -->
+                    <div class="company-content common-pad">
+                        <p style="color: gray;">COMPANY</p>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the Record</p>
+                    </div>
+                    <div class="communities-content common-pad">
+                        <p style="color: gray;">COMMUNITIES</p>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertizing</p>
+                    </div>
+                    <div  class="links-content common-pad">
+                        <p style="color: gray;">USEFUL LINKS</p>
+                        <p>Support</p>
+                        <p>Web Player</p>
+                        <p>Free Mobile App</p>
+                    </div>
+                <!-- </div> -->
+
+
+                <div style="flex-direction: row;"class="social-sites common-pad">
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+            </div>
+    </footer>
+    
+    <!-- footer ends here -->
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
